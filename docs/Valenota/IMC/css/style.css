@@ -1,58 +1,262 @@
-html,body,div,span,applet,object,iframe,
-h1,h2,h3,h4,h5,h6,p,blockquote,pre,
-a,abbr,acronym,address,big,cite,code,
-del,dfn,em,img,ins,kbd,q,s,samp,
-small,strike,strong,sub,sup,tt,var,
-b,u,i,center,
-dl,dt,dd,ol,ul,li,
-fieldset,form,label,legend,
-table,caption,tbody,tfoot,thead,tr,th,td,
-article,aside,canvas,details,embed,
-figure,figcaption,footer,header,hgroup,
-menu,nav,output,ruby,section,summary,
-time,mark,audio,video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section{
-    display: block;
-}
 body{
-    line-height: 1;
+    font-family: 'Arial';
+    letter-spacing: 3px;
+    word-spacing: 1.2px;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
 }
-ol,ul{
-    list-style: none;
-}
-blockquote,q{
-    quotes: none;
-}
-blockquote::before,blockquote::after,
-q::before,q::after{
-    content: '';
-    content: none;
-}
-table{
+header{
+    border: 3px solid rgb(255, 255, 255);
     border-collapse: collapse;
-    border-spacing: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
 }
-ol,ul{
-    list-style: none;
+#logo{
+    height: 90px;
+    display: flex;
+    display: inline-block;
+    margin: 5px 25px 5px 30px;
 }
-
-*,
-*::after,
-*::before{
-    margin: 0;
-    padding: 0;
+header h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: -2px 2px 4px rgb(0, 0, 0);
+}
+.menu-principal{
+    background-color: rgb(122, 129, 226);
+    font-size: 20px;
+    font-weight: lighter; 
+    letter-spacing: 5px;
+    padding: 15px 40px;
+    margin: 10px 0;
+    text-align: center;
+    height: 60px;
+    width: 500px;
+}
+.menu-principal li{
+    display: flex;
+    display: inline-block;
+}
+.menu-principal a{
+    color: rgb(255, 255, 255);
+}
+.menu-principal a:hover{
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    text-decoration: underline;
+}
+#bem-estar{
+    text-align: center;
+    color: rgb(18, 50, 18);
+    display: inline-block;
+    width: 75%;
     box-sizing: border-box;
-    text-decoration: none;
+    height: 100%;
 }
-body{
-    font-size: 100%;
-    list-style-type: none;
+#bem-estar img{
+    max-width: 700px;
+    margin: 50px 80px -60px 0px;
+}
+#bem-estar p{
+    box-shadow: -1px 1px 13px rgb(0, 0, 0);
+    font-size: 14px;
+    margin: 13px 11px;
+    text-indent: 3em;
+    text-align: justify;
+    line-height: 1.8em;
+    padding: 3px 70px;
+    display: inline-block;
+    width: 80%;
+    font-weight: bold;
+}
+.img-fitness{
+    float: right;
+    width: 20%;
+}
+.img-fitness img{
+    max-width: 350px;
+    margin-left: -180px;
+    padding-top: 10px;
+}
+.footer-content{
+    font-size: 18px;
+    color: rgb(18, 50, 18);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px 20px;
+    width: 100%;
+}
+.footer-content img{
+    width: 40px;
+    margin-right: 20px;
+}
+.sobre{
+    background-image: url('../img/1_g4fxySN1_UDoXYN5vb9_xw.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0px;
+    width: 100%;
+}
+#content-sobre{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+}
+#content-sobre p{
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: -3px 2px 15px rgb(0, 0, 0);
+    font-size: 17px;
+    margin: 45px 30px;
+    text-indent: 4em;
+    text-align: justify;
+    line-height: 2.5em;
+    padding: 22px 80px;
+    display: inline-block;
+    width: 45%;
+    font-weight: bold;
+}
+#content-sobre h3{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 20px 20px 20px;
+}
+    
+.novidades{
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    text-align: center;
+}
+.novidades hr{
+    box-shadow: -8px 5px 10px rgb(255, 0, 0);
+    width: 0%; /* 0 pq n quero que apareca*/
+    height: 5px;
+    margin: 0px 15% 40px;
+}
+#content-novidades{
+    text-align: center;
+    align-content: center;
+    align-self: center;
+}
+#content-novidades article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+#content-novidades h3{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 20px 20px 20px;
+}
+#content-novidades p{
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: -3px 2px 15px rgb(0, 0, 0);
+    font-size: 17px;
+    margin: 45px 30px;
+    text-indent: 4em;
+    text-align: justify;
+    line-height: 2.5em;
+    padding: 22px 80px;
+    display: inline-block;
+    width: 45%;
+    font-weight: bold;
+}
+#content-novidades img{
+    max-width: 300px;
+    height: 200px;
+    margin: 20px;
+}
+#calc-imc{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    width: 30%;
+    height: 340px;
+    margin: 120px 40px 100px 100px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+#calc-imc input{
+    width: 60%;
+    height: 40px;
+    margin: 10px 5px 5px;
+    padding: 3px 10px;
+    text-align: center;
+}
+#calc-imc label{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#calc-imc button{
+    width: 60%;
+    font-size: 17px;
+    text-align: center;
+    font-weight: bold;
+    padding: 7px 0px 5px;
+    color: rgb(0, 0, 0);
+    margin-top: auto;
+    box-shadow: -4px 4px 5px rgb(0, 0, 0);
+    border-radius: 40%;
+    border: none;
+    position: relative;
+}
+#calc-imc button:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    box-shadow: -8px 8px 5px lightgray;
+    border: 1px solid rgb(255, 0, 0);
+}
+.result{
+    border: 3px solid black;
+
+    width: 40%;
+    height: 300%;
+    padding: 30px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    margin: 90px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.result h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.result div{
+    background-color: rgb(255, 255, 255);
+    box-shadow: -3px 5px 18px white;
+    max-width: 650px;
+    padding: 10px 15px;
+    height: 150px;
+    display: inline-block;
+}
+.page-result{
+    display: flex;
+}
+.result img{
+    width: 180px;
+    margin: 10px;
+    display: inline-block;
 }
