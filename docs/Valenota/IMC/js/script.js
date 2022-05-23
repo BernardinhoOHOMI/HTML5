@@ -13,13 +13,13 @@ function classificaImc(imc){
     if(imc < 18.5){
         detalhe = 'Abaixo do peso';
     }
-    else if (imc >= 18.5 & imc < 25){
+    else if (imc >= 18.5 && imc < 25){
         detalhe = 'Peso normal';
     }
-    else if (imc >= 25 & imc < 30){
+    else if (imc >= 25 && imc < 30){
         detalhe = 'Sobrepeso';
     }
-    else if (imc >=30 & imc < 40){
+    else if (imc >=30 && imc < 40){
         detalhe = 'Obesidade';
     }
     else{
@@ -35,7 +35,7 @@ function calculaImc(){
     console.log(checaValores(peso,altura));
     if(checaValores(peso, altura)){
         let sqrtAltura = altura * altura;
-        let imc = (peso/sqrtAltura).toPrecision(4);
+        let imc = Math.round((peso/(altura**2))*10)/10;
         let resultado = document.querySelector('#resultado');
         resultado.textContent = 'Seu IMC atual é : ' + imc + ' - ' + classificaImc(imc);
     }
@@ -48,8 +48,8 @@ function calculaImc(){
 function limparCampos(){
     let peso = document.querySelector('#peso');
     let altura = document.querySelector('#altura');
-    peso.textContent = '';
-    altura.textContent = '';
+    peso.value = '';
+    altura.value = '';
 }
 
 btnCalcular.addEventListener('click', calculaImc);
